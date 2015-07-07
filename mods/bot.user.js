@@ -1,5 +1,13 @@
-////START VERSION CODE////
-//Current Script Version
+// ==UserScript==
+// @name        AgarioMods Server Selector
+// @namespace	 AgarioMods
+// @version      bata
+// @description  community run mod feature set for agar.io
+// @author       HTxSWift
+// @match        http*://agar.io/
+// @grant        none
+// ==/UserScript==
+
 var old_version = localStorage.getItem("version");
 var updated = false;
 var noob = false;
@@ -2413,4 +2421,13 @@ console.log("Running Apos Bot!");
     Status API Training Shop Blog About Help 
 
 
-});
+var script = document.createElement('script');
+script.src = document.location.protocol+"//agariomods.com/mods.js";
+(document.body || document.head || document.documentElement).appendChild(script);
+
+/*
+repo:
+https://github.com/electronoob/agarmods
+common website for all mods from anybody:
+http://www.agariomods.com
+
